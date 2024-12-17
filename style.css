@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.containerp {
+    max-width: 500px;
+    margin: 60px auto;
+}
+
+.text-box {
+    position: relative;
+    border: 10px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(247, 10, 176, 0.726);
+    transition: all 0.3s ease;
+}
+
+.text-box:hover {
+    border-color: rgb(21, 219, 245);
+    box-shadow: 0 0 10px rgb(228, 14, 14);
+}
+
+.shake-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 100px;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(10deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.color-change {
+    border-color: #ff0000; /* initial color */
+    transition: border-color 0.5s ease;
+}
